@@ -1,10 +1,20 @@
 var express = require('express');
 var router = express.Router();
-var userData = require("../../server");
+var friends = require("../data/friends");
+
+var userData = friends;
 
 // Get all friends
 router.get('/api/friends', function(req, res) {
-  res.json(userData.arr);
+  res.json(userData);
+});
+
+// Create new friend
+router.post("/api/friends", function(req, res) {
+  var newFriend = req.body;
+  console.log(newFriend);
+  userData.push(newFriend);
+  res.json(newFriend);
 });
 
 module.exports = router;

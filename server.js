@@ -1,7 +1,6 @@
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
-var friends = require("./app/data/friends");
 
 // Sets up the Express App
 var app = express();
@@ -20,12 +19,7 @@ app.use(express.static('public'));
 app.use(require('./app/routing/apiRoutes'));
 app.use(require('./app/routing/htmlRoutes'));
 
-// User Data
-var userData = friends;
-
 // Starts the server to begin listening
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
-
-module.exports.arr = userData;
