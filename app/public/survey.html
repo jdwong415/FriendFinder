@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   <script src="https://use.fontawesome.com/e93e87a450.js"></script>
   <title>Friend Finder</title>
 </head>
@@ -23,24 +27,95 @@
             <hr>
             <h3><strong>Question 1</strong></h3>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+            <select class="selectpicker" id="q1" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 2</strong></h3>
             <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+            <select class="selectpicker" id="q2" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 3</strong></h3>
             <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+            <select class="selectpicker" id="q3" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 4</strong></h3>
             <h4>You rarely do something just out of sheer curiosity.</h4>
+            <select class="selectpicker" id="q4" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 5</strong></h3>
             <h4>People can rarely upset you.</h4>
+            <select class="selectpicker" id="q5" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 6</strong></h3>
             <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+            <select class="selectpicker" id="q6" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 7</strong></h3>
             <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+            <select class="selectpicker" id="q7" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 8</strong></h3>
             <h4>You rarely get carried away by fantasies and ideas.</h4>
+            <select class="selectpicker" id="q8" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 9</strong></h3>
             <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+            <select class="selectpicker" id="q9" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
             <h3><strong>Question 10</strong></h3>
             <h4>You feel more energetic after spending time with a group of people.</h4>
+            <select class="selectpicker" id="q10" title="Select an Option">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
             <br>
             <button type="button" class="btn btn-primary btn-lg">
               <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
