@@ -23,7 +23,7 @@
             <h4>Name (Required)</h4>
             <input type="text" class="form-control" id="name" required>
             <h4>Photo Image URL (Required)</h4>
-            <input type="text" class="form-control" id="image" required>
+            <input type="text" class="form-control" id="photo" required>
             <hr>
             <h3><strong>Question 1</strong></h3>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
@@ -117,7 +117,7 @@
             </select>
             <br>
             <br>
-            <button type="button" class="btn btn-primary btn-lg">
+            <button type="button" class="btn btn-primary btn-lg submit">
               <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
             </button>
           </div>
@@ -133,5 +133,16 @@
       </div>
   </footer>
   </div>
+  <script>
+    $(".submit").on("click", function() {
+      var userData = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), 
+          $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+      }
+      console.log(userData);
+    });
+  </script>
 </body>
 </html>
