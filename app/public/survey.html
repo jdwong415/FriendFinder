@@ -302,6 +302,11 @@
           scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), 
             $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
+
+        // Clear forms
+        $("#name").val("");
+        $("#photo").val("");
+        $(".selectpicker").selectpicker("val", "");
     
         // Send new friend object to server and get best match
         $.post("/api/friends", userData)
