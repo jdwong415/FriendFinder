@@ -34,7 +34,7 @@
                 <div class="form-group">
                   <h4><strong>Question 1</strong></h4>
                   <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-                  <select class="selectpicker" name="q1" title="Select an Option">
+                  <select class="selectpicker" name="q1" id="q1" title="Select an Option">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -198,6 +198,8 @@
   </div>
   <script>
     $(document).ready(function() {
+
+      // Bootstrap Validator
       $('#form').bootstrapValidator({
         fields: {
           name: {
@@ -293,6 +295,7 @@
 
         e.preventDefault();
 
+        // Create new friend object
         var userData = {
           name: $("#name").val().trim(),
           photo: $("#photo").val().trim(),
@@ -300,6 +303,7 @@
             $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
     
+        // Send new friend object to server and get best match
         $.post("/api/friends", userData)
         .done(function(data) {
           console.log(data);

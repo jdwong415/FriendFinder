@@ -15,8 +15,7 @@ router.post("/api/friends", function(req, res) {
   res.json(getBestMatch(newFriend));
 });
 
-module.exports = router;
-
+// Get best match with closest score to user
 function getBestMatch(newFriend) {
   var arr = [];
   for (var i = 0; i < friends.length - 1; i++) {
@@ -30,6 +29,7 @@ function getBestMatch(newFriend) {
   return friends[index];
 }
 
+// Look through array of scores and return index of lowest score
 function findMinDifference(arr) {
   var min = arr[0];
   for (var i = 1; i < arr.length; i++) {
@@ -39,3 +39,5 @@ function findMinDifference(arr) {
   }
   return arr.indexOf(min);
 }
+
+module.exports = router;

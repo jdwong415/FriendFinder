@@ -1,4 +1,5 @@
-var userData = [
+// Array of friends
+var friends = [
   {
     name: "Yoda",
     photo: "https://pbs.twimg.com/profile_images/758935085550665729/OABKbhBA.jpg",
@@ -22,4 +23,4 @@ var userData = [
   }
 ];
 
-module.exports = userData;
+module.exports = friends;
