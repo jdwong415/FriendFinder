@@ -17,7 +17,9 @@ A friend finder app using Node and Express, that calculates compatibility based 
 
 * Open in browser: `http://localhost:8080`
 
-* Answer 10 questions and find the friend that you've always been looking for.
+* Answer 10 survey questions 
+
+* Find the friend that you've always been looking for.
 
 ## Demo
 https://agile-island-75963.herokuapp.com/
