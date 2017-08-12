@@ -23,3 +23,5 @@ A friend finder app using Node and Express, that calculates compatibility based 
 
 ## Demo
 https://agile-island-75963.herokuapp.com/
+
+<img src="./app/public/img/survey.png" width="500px">
